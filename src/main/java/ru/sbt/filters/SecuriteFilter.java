@@ -1,4 +1,7 @@
-package ru.sbt;
+package ru.sbt.filters;
+
+import ru.sbt.dao.UserDao;
+import ru.sbt.dao.UserDaoImpl;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
@@ -13,6 +16,7 @@ import java.io.IOException;
 @WebFilter(filterName = "SecurityFilter", urlPatterns = {"/hello", "/cal"})
 public class SecuriteFilter implements Filter {
     private final UserDao userDao = new UserDaoImpl();
+
     public void destroy() {
     }
 

@@ -1,4 +1,7 @@
-package ru.sbt;
+package ru.sbt.servlets;
+
+import ru.sbt.dao.UserDao;
+import ru.sbt.dao.UserDaoImpl;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

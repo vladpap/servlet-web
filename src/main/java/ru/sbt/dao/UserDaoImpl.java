@@ -1,4 +1,4 @@
-package ru.sbt;
+package ru.sbt.dao;
 
 /**
  * Created by user18 on 27.10.2016.
